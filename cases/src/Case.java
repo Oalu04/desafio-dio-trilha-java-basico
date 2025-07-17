@@ -29,7 +29,7 @@ public class Case {
         for (int i = 0; i < candidatos.length; i++) {
             int salarioPretendido = valorPretendido();
             int verificacao = analisarCandidato(salarioPretendido);
-            if (contador == 5) {
+            if (contador == 5) {   
                 break;
             }
             switch (verificacao) {
@@ -66,7 +66,8 @@ public class Case {
             if (candidatosSelecionados[x] == null) {
                 throw new NotEnoughDataException();
             }
-
+            
+            scan.close();
         }
         return candidatosSelecionados;
     }

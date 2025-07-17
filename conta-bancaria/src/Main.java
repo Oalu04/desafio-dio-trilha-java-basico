@@ -49,8 +49,8 @@ public class Main {
     
     public static void main(String[] args) throws Exception {
         conta.setSaldo(ThreadLocalRandom.current().nextInt(100, 1000));
-        conta.setBoleto(ThreadLocalRandom.current().nextInt(100, 1500));
-        int escolha = -1;
+            conta.setBoleto(ThreadLocalRandom.current().nextInt(100, 1500));
+            int escolha = -1;
         painel();
         
         do {
